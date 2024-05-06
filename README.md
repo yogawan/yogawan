@@ -5,6 +5,6 @@
   "experience": {
     "Graphic Designer": "CV. Rachmat Surya Design Art Concept",
     "UI Designer": "PT. Codingan Sejati (VERDEX)",
-    "MERN Stack Developer": "Upwork"
+    "MERN Stack Developer": ["Upwork", "Fiverr", "Freelancer"]
   }
 }
