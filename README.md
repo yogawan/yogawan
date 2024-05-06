@@ -1,11 +1,12 @@
 ```json
 {
-  "nama": "John Doe",
-  "umur": 30,
-  "alamat": {
-    "jalan": "Jl. Contoh No. 123",
-    "kota": "Kota Contoh",
-    "provinsi": "Provinsi Contoh",
-    "kode_pos": "12345"
-  }
+  "nama": "Yogawan Aditya Pratama",
+  "hobby": "Watching Porn",
+  "school": {
+    "sd": "Talun 2 State Elementary School",
+    "smp": "Manisrenggo 2 State Junior High School",
+    "smk": "Musaka 1 Klaten Private School",
+  },
+  "experience": {
+    ""
 }
