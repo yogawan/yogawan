@@ -7,5 +7,5 @@
     "UI Designer": "Figma",
     "Front-End": ["ReactJS", "NextJS (On-Going)"]
     "Back-End": "MonggoDB"
-  };
-};
+  }
+}
