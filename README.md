@@ -1,11 +1,12 @@
 ```json
 {
   "name": "Yogawan Aditya Pratama",
-  "hobby": ["Watching Anime", "Coding", "Smoking"],
+  "education": "University of Technology Yogyakarta",
+  "interest": ["Bitcoin", "JKT48"],
   "skills": {
     "Graphic Designer": ["Figma", "CorelDraw"],
     "UI Designer": "Figma",
-    "Front-End": ["ReactJS", "NextJS (On-Going)"]
+    "Front-End": ["Saas", "Tailwind (On-Going)", "ReactJS", "NextJS (On-Going)"]
     "Back-End": "MonggoDB"
   }
 }
