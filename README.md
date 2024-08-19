@@ -6,7 +6,7 @@
   "skills": {
     "Graphic Designer": ["Figma", "CorelDraw"],
     "UI/UX Designer": ["Figma"],
-    "Front-End": ["Saas", "Tailwind (On-Going)", "ReactJS", "NextJS (On-Going)"],
+    "Front-End": ["Saas", "Tailwind", "ReactJS", "NextJS"],
     "Back-End": ["MonggoDB", "ExpressJS"]
   }
 }
