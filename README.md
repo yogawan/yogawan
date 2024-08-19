@@ -5,7 +5,7 @@
   "interest": ["Bitcoin", "JKT48"],
   "skills": {
     "Graphic Designer": ["Figma", "CorelDraw"],
-    "UI Designer": ["Figma"],
+    "UI Designer": ["Figma", "Sketch", "CorelDraw"],
     "Front-End": ["Saas", "Tailwind", "ReactJS", "NextJS"],
     "Back-End": ["MonggoDB", "ExpressJS"]
   }
