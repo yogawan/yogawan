@@ -2,8 +2,8 @@ name: Update README
 
 on:
   schedule:
-    # Menjalankan workflow setiap menit
-    - cron: "*/1 * * * *"
+    # Menjalankan workflow setiap 5 menit
+    - cron: "*/5 * * * *"
 
 jobs:
   update-readme:
@@ -29,13 +29,13 @@ jobs:
           "updated_at": "'$(date -u)'"
         }' > README.md
 
-    # Commit dan push perubahan
+    # Commit dan push perubahan, dengan penanganan error
     - name: Commit and push changes
       run: |
-        git config --global user.name "github-actions[bot]"
-        git config --global user.email "github-actions[bot]@users.noreply.github.com"
-        git add README.md
-        git commit -m "Update README automatically"
-        git push
+        git config --global user.name "github-actions[bot]" || exit 1
+        git config --global user.email "github-actions[bot]@users.noreply.github.com" || exit 2
+        git add README.md || exit 3
+        git commit -m "Update README automatically" || exit 4
+        git push || exit 5
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
