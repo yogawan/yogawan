@@ -2,8 +2,8 @@ name: Update README
 
 on:
   schedule:
-    # Menjalankan workflow setiap hari pukul 12 siang UTC
-    - cron: "0 12 * * *"
+    # Menjalankan workflow setiap menit
+    - cron: "*/1 * * * *"
 
 jobs:
   update-readme:
