@@ -1,39 +1,41 @@
-# This is a basic workflow to help you get started with Actions
+name: Update README
 
-name: CI
-
-# Controls when the workflow will run
 on:
-  # Triggers the workflow on push or pull request events but only for the "main" branch
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
-
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
   schedule:
-    # Runs at 12am UTC
-    - cron: "0 0 * * *"
+    # Menjalankan workflow setiap hari pukul 12 siang UTC
+    - cron: "0 12 * * *"
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
-  build:
-    # The type of runner that the job will run on
+  update-readme:
     runs-on: ubuntu-latest
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v4
+    # Checkout repositori
+    - uses: actions/checkout@v4
 
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
+    # Update README.md dengan data baru
+    - name: Update README
+      run: |
+        echo '{
+          "name": "Yogawan Aditya Pratama",
+          "education": "University of Technology Yogyakarta",
+          "interest": ["Bitcoin", "JKT48"],
+          "skills": {
+            "Graphic Designer": ["Figma", "CorelDraw"],
+            "UI Designer": ["Figma", "Sketch"],
+            "Front-End": ["Saas", "Tailwind (On-Going)", "ReactJS", "NextJS (On-Going)"],
+            "Back-End": ["MonggoDB", "ExpressJS", "MySQL"]
+          },
+          "updated_at": "'$(date -u)'"
+        }' > README.md
 
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+    # Commit dan push perubahan
+    - name: Commit and push changes
+      run: |
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        git add README.md
+        git commit -m "Update README automatically"
+        git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
