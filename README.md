@@ -1,4 +1,3 @@
-```json
 {
   "name": "Yogawan Aditya Pratama",
   "education": "University of Technology Yogyakarta",
@@ -8,5 +7,6 @@
     "UI Designer": ["Figma", "Sketch"],
     "Front-End": ["Saas", "Tailwind (On-Going)", "ReactJS", "NextJS (On-Going)"],
     "Back-End": ["MonggoDB", "ExpressJS", "MySQL"]
-  }
+  },
+  "updated_at": "Wed Oct 2 05:24:29 UTC 2024"
 }
