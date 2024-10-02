@@ -1,8 +1,8 @@
 name: Update README
 
+# Mengatur workflow untuk berjalan setiap 5 menit
 on:
   schedule:
-    # Menjalankan workflow setiap 5 menit
     - cron: "*/5 * * * *"
 
 jobs:
@@ -10,10 +10,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    # Checkout repositori
+    # Langkah pertama, checkout repositori
     - uses: actions/checkout@v4
 
-    # Update README.md dengan data baru
+    # Langkah kedua, memperbarui README.md dengan konten baru
     - name: Update README
       run: |
         echo '{
@@ -29,13 +29,13 @@ jobs:
           "updated_at": "'$(date -u)'"
         }' > README.md
 
-    # Commit dan push perubahan, dengan penanganan error
+    # Langkah ketiga, commit perubahan ke repositori
     - name: Commit and push changes
       run: |
-        git config --global user.name "github-actions[bot]" || exit 1
-        git config --global user.email "github-actions[bot]@users.noreply.github.com" || exit 2
-        git add README.md || exit 3
-        git commit -m "Update README automatically" || exit 4
-        git push || exit 5
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        git add README.md
+        git commit -m "Update README automatically"
+        git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
