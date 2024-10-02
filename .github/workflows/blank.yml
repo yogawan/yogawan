@@ -16,7 +16,9 @@ jobs:
     # Langkah kedua, memperbarui README.md dengan konten baru
     - name: Update README
       run: |
-        echo '{
+        echo '
+        ```json
+        {
           "name": "Yogawan Aditya Pratama",
           "education": "University of Technology Yogyakarta",
           "interest": ["Bitcoin", "JKT48"],
