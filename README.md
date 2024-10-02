@@ -8,5 +8,5 @@
     "Front-End": ["Saas", "Tailwind (On-Going)", "ReactJS", "NextJS (On-Going)"],
     "Back-End": ["MonggoDB", "ExpressJS", "MySQL"]
   },
-  "updated_at": "Wed Oct 2 05:39:03 UTC 2024"
+  "updated_at": "Wed Oct 2 05:49:03 UTC 2024"
 }
