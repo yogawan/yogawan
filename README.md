@@ -1,4 +1,5 @@
-'''{
+```json
+{
   "name": "Yogawan Aditya Pratama",
   "education": "University of Technology Yogyakarta",
   "interest": ["Bitcoin", "JKT48"],
