@@ -1,9 +1,9 @@
 name: Update README
 
-# Mengatur workflow untuk berjalan setiap 5 menit
+# Mengatur workflow untuk berjalan sekali sehari pada pukul 00:00 UTC
 on:
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "0 0 * * *"
 
 jobs:
   update-readme:
