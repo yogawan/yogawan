@@ -1,43 +1,19 @@
-name: Update README
+name: Waka Readme
 
-# Mengatur workflow untuk berjalan sekali sehari pada pukul 00:00 UTC
 on:
+  workflow_dispatch:
   schedule:
+    # Runs at 12am UTC
     - cron: "0 0 * * *"
 
 jobs:
   update-readme:
+    name: Update this repo's README
     runs-on: ubuntu-latest
-
     steps:
-    # Langkah pertama, checkout repositori
-    - uses: actions/checkout@v4
-
-    # Langkah kedua, memperbarui README.md dengan konten baru
-    - name: Update README
-      run: |
-        echo '
-        ```json
-        {
-          "name": "Yogawan Aditya Pratama",
-          "education": "University of Technology Yogyakarta",
-          "interest": ["Bitcoin", "JKT48"],
-          "skills": {
-            "graphic_designer": ["Figma", "CorelDraw"],
-            "ui_designer": ["Figma", "Sketch"],
-            "frontend": ["Saas", "Tailwind", "ReactJS", "NextJS"],
-            "backend": ["MonggoDB", "ExpressJS", "MySQL", "SQLite"],
-          },
-          "updated_at": "'$(date -u)'"
-        }' > README.md
-
-    # Langkah ketiga, commit perubahan ke repositori
-    - name: Commit and push changes
-      run: |
-        git config --global user.name "github-actions[bot]"
-        git config --global user.email "github-actions[bot]@users.noreply.github.com"
-        git add README.md
-        git commit -m "Update README automatically"
-        git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - uses: athul/waka-readme@master
+        with:
+          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          COMMIT_MESSAGE: Updated the Readme
+          SHOW_TITLE: true
