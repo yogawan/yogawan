@@ -1,13 +1,1 @@
-## なにこれ
-アニメーション GIF を端末上で再生するやつ
-
-## デモ
-![screenshot](https://raw.githubusercontent.com/zaftzaft/terminal-anime/master/demo.gif)
-![alt text](image.png)
-
-## 必要なもの
-+ PIL ( Pillow)
-+ drawille
-
-## つかいかた
-`$ ./main.py /path/to/donat.gif`
+![image](https://github.com/user-attachments/assets/c7832046-c985-461f-a629-fd4649d07e82)
