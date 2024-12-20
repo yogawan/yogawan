@@ -3,6 +3,7 @@
 
 ## デモ
 ![screenshot](https://raw.githubusercontent.com/zaftzaft/terminal-anime/master/demo.gif)
+![alt text](image.png)
 
 ## 必要なもの
 + PIL ( Pillow)
