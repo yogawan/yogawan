@@ -1,18 +1,12 @@
-<h1 align="center">
-  <img src="Readme Neofetch.svg">
-</h1>
+## なにこれ
+アニメーション GIF を端末上で再生するやつ
 
-<!--
-**Suzie97/Suzie97** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## デモ
+![screenshot](https://raw.githubusercontent.com/zaftzaft/terminal-anime/master/demo.gif)
 
-Here are some ideas to get you started:
+## 必要なもの
++ PIL ( Pillow)
++ drawille
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## つかいかた
+`$ ./main.py /path/to/donat.gif`
