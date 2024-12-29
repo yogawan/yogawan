@@ -1,1 +1,5 @@
-xixixi
+![bio](./src/bio.svg)
+![headline](./src/headline.svg)
+![skills](./src/skills.svg)
+![tools](./src/tools.svg)
+![snake](./src/snake.svg)
