@@ -1,1 +1,1 @@
-Hi! I'm Yogawan, a Beginner
+Hi! I'm Yogawan, and i'm just a Beginner
