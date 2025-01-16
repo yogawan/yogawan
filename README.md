@@ -1,1 +1,1 @@
-![snake](./src/snake.svg)
+Hi! I'm Yogawan, a Beginner
