@@ -1,1 +1,1 @@
-... Ok, whats next?
+... Ok, what's next?
