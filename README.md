@@ -1,4 +1,8 @@
-*   **1st Place Winner** – National Web Development Competition (Defeating top-tier elite national universities).
-*   **National Finalist (Top 50 / 627)** – BudayaGo App by the Ministry of Culture, Republic of Indonesia.
+- 🥇 **1st Place Winner** - National Web Development Competition  
+  Organized Techomfest, Politeknik Negeri Semarang
 
-... Ok, what's next?
+- 🥉 **3rd Place Winner** - UI/UX Design Competition  
+  Organized by HIMATIKA, Universitas Teknologi Yogyakarta.
+
+- 🇮🇩 **National Finalist (Top 50 of 627 Teams)** - BudayaGo App  
+  Organized by the Ministry of Culture, Republic of Indonesia.
