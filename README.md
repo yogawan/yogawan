@@ -1,4 +1,3 @@
-1st Web Development National Competition by Politeknik Negeri Semarang
-1st Web Development Regional Java Island Competition by Universitas Jendral Ahmad Yani Yogyakarta
-Top 50 Web Development National Competition by Ministry of Culture of the Republic of Indonesia
-... Ok, what's next?
+- 1st Web Development National Competition by Politeknik Negeri Semarang
+- 1st Web Development Regional Java Island Competition by Universitas Jendral Ahmad Yani Yogyakarta
+- Top 50 Web Development National Competition by Ministry of Culture of the Republic of Indonesia
