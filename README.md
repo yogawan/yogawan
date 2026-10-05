@@ -5,8 +5,9 @@
   <img src="assets/nextjs.svg" title="Next.js" alt="Next.js" width="40" height="40"/>&nbsp;
   <img src="assets/tailwind.svg" title="Tailwind CSS" alt="Tailwind CSS" width="40" height="40"/>&nbsp;
   <img src="assets/radixui.svg" title="Radix UI" alt="Radix UI" width="40" height="40"/>&nbsp;
-  <img src="assets/shadcnui.svg" title="shadcn/ui" alt="shadcn/ui" width="40" height="40"/>&nbsp;
   <img src="assets/baseui.svg" title="Base UI" alt="Base UI" width="40" height="40"/>&nbsp;
+  <img src="assets/headlessui.svg" title="Headless UI" alt="Headless UI" width="40" height="40"/>&nbsp;
+  <img src="assets/shadcnui.svg" title="shadcn/ui" alt="shadcn/ui" width="40" height="40"/>&nbsp;
   <img src="assets/framer-motion.svg" title="Framer Motion" alt="Framer Motion" width="40" height="40"/>&nbsp;
   <img src="assets/gsap.svg" title="GSAP" alt="GSAP" width="40" height="40"/>&nbsp;
   <img src="assets/storybook.svg" title="Storybook" alt="Storybook" width="40" height="40"/>&nbsp;
